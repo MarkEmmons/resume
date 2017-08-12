@@ -1,5 +1,7 @@
 \documentclass[11pt]{article}
 
+\usepackage{changepage}
+
 \topmargin=0.0in
 \oddsidemargin=0.0in
 \evensidemargin=0in
@@ -9,13 +11,19 @@
 \headsep=0pt
 \textheight=9.0in
 
+\newenvironment{info}{\begin{adjustwidth}{6mm}{}}{\end{adjustwidth}}
+
 \begin{document}
+
+% Remove page numbering
 \pagenumbering{gobble}
 
+% Header
 \centerline{\LARGE \bf Mark A Emmons}
 \centerline{955 E Stone Creek Cir, Crystal Lake, IL 60014, USA}
 \centerline{MarkAndreasEmmons@gmail.com $\cdot$ +1(815)355--8062 $\cdot$ https://Github.com/MarkEmmons}
 
+% Education
 \noindent {\large \bf Education} \\
 \indent {\bf University of Illinois at Chicago}, Chicago, Illinois \hfill Aug 2012--Dec 2015 \\
 \indent $\bullet$ Bachelor of Science in Computer Science---December 2015 \\
@@ -23,56 +31,57 @@
 \indent {\bf McHenry County College}, Crystal Lake, Illinois \hfill Jun 2011--Aug 2012 \\
 \indent $\bullet$ General education courses.
 
-\noindent {\large \bf Selected Coursework} \\
-\indent Linear Algebra, Abstract Algebra
+% Selected Coursework
+\noindent {\large \bf Selected Coursework}
+\begin{info}
+Linear Algebra, Abstract Algebra, Atomic and Molecular Nanotechnology, Introduction to Bioinformatics w/ Lab, Operating Systems Concepts and Desgin, Artificial Intelligence, Computer Networking, Secure Operating System Design and Implementation, Secure Computer Systems, Codes and Cryptography.
+\end{info}
 
-\noindent {\large \bf Selected Projects} \\
-\indent {\bf Arch Linux Installation Script} \\
-\indent $\bullet$ A custom bash script for automating the installation process and post installation build of an Arch Linux operating system. \\
-\indent $\bullet$ Full feature install in 5--10 minutes. \\
-\indent {\bf Sudoku Solver} \\
-\indent $\bullet$ Java version of Donald Knuth's Dancing Links data structure for solving Sudoku puzzles. \\
-\indent {\bf Intel Emulators} \\
-\indent $\bullet$ 8080 and 8086 CPU emulators written in C.
+% Selected Projects
+\noindent {\large \bf Selected Projects}
+\begin{info}
+{\bf Arch Linux Installation Script} \\
+$\bullet$ A custom bash script for automating the installation process and post installation build of an Arch Linux operating system. \\
+$\bullet$ Full feature install in 5--10 minutes. \\
+{\bf Sudoku Solver} \\
+$\bullet$ Java version of Donald Knuth's Dancing Links data structure for solving Sudoku puzzles. \\
+{\bf Intel Emulators} \\
+$\bullet$ 8080 and 8086 CPU emulators written in C.
+\end{info}
 
-\noindent {\large \bf Awards \& Activities} \\
-\indent {\bf UIC Bioengineering Student Journal} --- Editorial Board Member \\
-\indent $\bullet$ Chief Editor from Fall 2014 to Spring 2015. \\
-\indent $\bullet$ Author of \textit{Advances in DNA Computing and Molecular Programming}. \\
-\indent {\bf Nodeschool Chicago} --- Mentor \\
-\indent {\bf President's Award Program Scholar}
+% Awards & Activities
+\noindent {\large \bf Awards \& Activities}
+\begin{info}
+{\bf UIC Bioengineering Student Journal} --- Editorial Board Member \\
+$\bullet$ Chief Editor from Fall 2014 to Spring 2015. \\
+$\bullet$ Author of {\it Advances in DNA Computing and Molecular Programming}. \\
+{\bf NodeSchool Chicago} --- Mentor \\
+{\bf President's Award Program Scholar}
+\end{info}
 
-\noindent {\large \bf Work Experience} \\
-\indent {\bf UIC Dynamic Simulation Laboratory}, Chicago, Illinois \\
-\indent \textit{Webmaster} \\
-\indent $\bullet$ Wrote a website using HTML, CSS, Javascript, and PHP.\@ \\
-\indent $\bullet$ Provided extensive documentation so the site could be maintained after its completion. \\
-\indent {\bf UIC Department of Mathematics, Statistics, and Computer Science}, Chicago, Illinois \\
-\indent \textit{Undergraduate Teacher's Assistant and Grader} \\
-\indent $\bullet$ Teaching assistant for Professor Douglas Hogan. \\
-\indent $\bullet$ Graded weekly homework assignments in a timely manner and proctored overflow exams.
+% Work Experience
+\noindent {\large \bf Work Experience}
+\begin{info}
+{\bf UIC Dynamic Simulation Laboratory}, Chicago, Illinois \\
+\textit{Webmaster} \\
+$\bullet$ Wrote a website using HTML, CSS, Javascript, and PHP.\@ \\
+$\bullet$ Provided extensive documentation so the site could be maintained after its completion. \\
+{\bf UIC Department of Mathematics, Statistics, and Computer Science}, Chicago, Illinois \\
+\textit{Undergraduate Teacher's Assistant and Grader} \\
+$\bullet$ Teaching assistant for Professor Douglas Hogan. \\
+$\bullet$ Graded weekly homework assignments in a timely manner and proctored overflow exams.
+\end{info}
 
-\noindent {\large \bf Skills} \\
-\indent {\bf Languages} \\
-\indent $\bullet$ C/C++, Java, Python, Ruby, Bash/Zsh, Javascript (node.js, Express, React, Redux, Electron), mySQL, MongoDB, x86 (\_64) Assembly, JSON, \LaTeX, HTML5, CSS.\@ \\
-\indent {\bf Operating Systems} \\
-\indent $\bullet$ Windows (XP --- 10), Linux (Arch, Fedora, Kali, Ubuntu), OSX.\@ \\
-\indent {\bf Tools} \\
-\indent $\bullet$ Git/Github, Vim, Visual Studio, IntelliJ, Docker, Webpack, Babel, Virtual Box, Postman.
-
-%\noindent
-%Can program in a large variety of languages including: \\
-%\centerline{\hfill $\bullet$ C++ \hfill $\bullet$ Python \hfill $\bullet$ Perl \hfill} \\
-%\centerline{ \hfill $\bullet$ Bash \hfill $\bullet$ IDL \hfill} \\
-%Proficient with the following engineering applications: \\
-%\centerline{ \hfill $\bullet$ MatLab \hfill $\bullet$ Solid Works \hfill $\bullet$ EES \hfill} \\
-%\noindent{\Large \bf Professional Experience}
-%\smallskip
-%\centerline{ {\Large \bf Laboratory for Atmospheric and Space Physics \hfill 2011 Present} }
-%$\bullet$ Mission Operations and Subsystem Analysis \\
-%$\bullet$ Analysis of the SORCE and AIM Power Subsystems \\
-%$\bullet$ Analysis of the TIM SORCE Instrument and QSCAT Scatterometer \\
-%\bigskip
+% Skills
+\noindent {\large \bf Skills}
+\begin{info}
+{\bf Languages} \\
+$\bullet$ C/C++, Java, Python, Ruby, Bash/Zsh, Javascript (Node.js, Express, React, Redux, Electron), mySQL, MongoDB, x86 (\_64) Assembly, JSON, \LaTeX, HTML5, CSS.\@ \\
+{\bf Operating Systems} \\
+$\bullet$ Windows (XP --- 10), Linux (Arch, Fedora, Kali, Ubuntu), OSX.\@ \\
+{\bf Tools} \\
+$\bullet$ Git/Github, Vim, Visual Studio, IntelliJ, Docker, Webpack, Babel, Virtual Box, Postman.
+\end{info}
 
 \end{document}
 
