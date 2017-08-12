@@ -11,7 +11,9 @@
 \headsep=0pt
 \textheight=9.0in
 
-\newenvironment{info}{\begin{adjustwidth}{6mm}{}}{\end{adjustwidth}}
+\newcommand{\sectionheader}[1]{\noindent \textbf{\large #1}}
+
+\newenvironment{sectionbody}{\begin{adjustwidth}{6mm}{}}{\end{adjustwidth}}
 
 \begin{document}
 
@@ -24,22 +26,24 @@
 \centerline{MarkAndreasEmmons@gmail.com $\cdot$ +1(815)355--8062 $\cdot$ https://Github.com/MarkEmmons}
 
 % Education
-\noindent {\large \bf Education} \\
-\indent {\bf University of Illinois at Chicago}, Chicago, Illinois \hfill Aug 2012--Dec 2015 \\
-\indent $\bullet$ Bachelor of Science in Computer Science---December 2015 \\
-\indent \indent $\cdot$ Minor in Bioengineering and a focus in Mathematics. \\
-\indent {\bf McHenry County College}, Crystal Lake, Illinois \hfill Jun 2011--Aug 2012 \\
-\indent $\bullet$ General education courses.
+\sectionheader{Education}
+\begin{sectionbody}
+{\bf University of Illinois at Chicago}, Chicago, Illinois \hfill Aug 2012--Dec 2015 \\
+$\bullet$ Bachelor of Science in Computer Science---December 2015 \\
+\indent $\cdot$ Minor in Bioengineering and a focus in Mathematics. \\
+{\bf McHenry County College}, Crystal Lake, Illinois \hfill Jun 2011--Aug 2012 \\
+$\bullet$ General education courses.
+\end{sectionbody}
 
 % Selected Coursework
-\noindent {\large \bf Selected Coursework}
-\begin{info}
+\sectionheader{Selected Coursework}
+\begin{sectionbody}
 Linear Algebra, Abstract Algebra, Atomic and Molecular Nanotechnology, Introduction to Bioinformatics w/ Lab, Operating Systems Concepts and Desgin, Artificial Intelligence, Computer Networking, Secure Operating System Design and Implementation, Secure Computer Systems, Codes and Cryptography.
-\end{info}
+\end{sectionbody}
 
 % Selected Projects
-\noindent {\large \bf Selected Projects}
-\begin{info}
+\sectionheader{Selected Projects}
+\begin{sectionbody}
 {\bf Arch Linux Installation Script} \\
 $\bullet$ A custom bash script for automating the installation process and post installation build of an Arch Linux operating system. \\
 $\bullet$ Full feature install in 5--10 minutes. \\
@@ -47,21 +51,21 @@ $\bullet$ Full feature install in 5--10 minutes. \\
 $\bullet$ Java version of Donald Knuth's Dancing Links data structure for solving Sudoku puzzles. \\
 {\bf Intel Emulators} \\
 $\bullet$ 8080 and 8086 CPU emulators written in C.
-\end{info}
+\end{sectionbody}
 
 % Awards & Activities
-\noindent {\large \bf Awards \& Activities}
-\begin{info}
+\sectionheader{Awards \& Activities}
+\begin{sectionbody}
 {\bf UIC Bioengineering Student Journal} --- Editorial Board Member \\
 $\bullet$ Chief Editor from Fall 2014 to Spring 2015. \\
 $\bullet$ Author of {\it Advances in DNA Computing and Molecular Programming}. \\
 {\bf NodeSchool Chicago} --- Mentor \\
 {\bf President's Award Program Scholar}
-\end{info}
+\end{sectionbody}
 
 % Work Experience
-\noindent {\large \bf Work Experience}
-\begin{info}
+\sectionheader{Work Experience}
+\begin{sectionbody}
 {\bf UIC Dynamic Simulation Laboratory}, Chicago, Illinois \\
 \textit{Webmaster} \\
 $\bullet$ Wrote a website using HTML, CSS, Javascript, and PHP.\@ \\
@@ -70,18 +74,18 @@ $\bullet$ Provided extensive documentation so the site could be maintained after
 \textit{Undergraduate Teacher's Assistant and Grader} \\
 $\bullet$ Teaching assistant for Professor Douglas Hogan. \\
 $\bullet$ Graded weekly homework assignments in a timely manner and proctored overflow exams.
-\end{info}
+\end{sectionbody}
 
 % Skills
-\noindent {\large \bf Skills}
-\begin{info}
+\sectionheader{Skills}
+\begin{sectionbody}
 {\bf Languages} \\
 $\bullet$ C/C++, Java, Python, Ruby, Bash/Zsh, Javascript (Node.js, Express, React, Redux, Electron), mySQL, MongoDB, x86 (\_64) Assembly, JSON, \LaTeX, HTML5, CSS.\@ \\
 {\bf Operating Systems} \\
 $\bullet$ Windows (XP --- 10), Linux (Arch, Fedora, Kali, Ubuntu), OSX.\@ \\
 {\bf Tools} \\
 $\bullet$ Git/Github, Vim, Visual Studio, IntelliJ, Docker, Webpack, Babel, Virtual Box, Postman.
-\end{info}
+\end{sectionbody}
 
 \end{document}
 
