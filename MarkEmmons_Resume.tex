@@ -1,6 +1,9 @@
 \documentclass[11pt]{article}
 
 \usepackage{changepage}
+\usepackage{tikz}
+
+\usetikzlibrary{calc,shapes.multipart,chains,arrows}
 
 \topmargin=0.0in
 \oddsidemargin=0.0in
@@ -25,6 +28,9 @@
 \centerline{955 E Stone Creek Cir, Crystal Lake, IL 60014, USA}
 \centerline{MarkAndreasEmmons@gmail.com $\cdot$ +1(815)355--8062 $\cdot$ https://Github.com/MarkEmmons}
 
+% Line
+\noindent\rule{16.5cm}{0.4pt}
+
 % Education
 \sectionheader{Education}
 \begin{sectionbody}
@@ -35,23 +41,33 @@ $\bullet$ Bachelor of Science in Computer Science---December 2015 \\
 $\bullet$ General education courses.
 \end{sectionbody}
 
+% Space
+\vspace{2mm}
+
 % Selected Coursework
 \sectionheader{Selected Coursework}
 \begin{sectionbody}
-Linear Algebra, Abstract Algebra, Atomic and Molecular Nanotechnology, Introduction to Bioinformatics w/ Lab, Operating Systems Concepts and Desgin, Artificial Intelligence, Computer Networking, Secure Operating System Design and Implementation, Secure Computer Systems, Codes and Cryptography.
+Linear Algebra, Abstract Algebra, Atomic and Molecular Nanotechnology, Introduction to Bioinformatics w/ Lab, Operating Systems, Artificial Intelligence, Computer Networking, Secure Operating System Design, Secure Computer Systems, Codes and Cryptography.
 \end{sectionbody}
+
+% Space
+\vspace{2mm}
 
 % Selected Projects
 \sectionheader{Selected Projects}
 \begin{sectionbody}
 {\bf Arch Linux Installation Script} \\
-$\bullet$ A custom bash script for automating the installation process and post installation build of an Arch Linux operating system. \\
-$\bullet$ Full feature install in 5--10 minutes. \\
+%$\bullet$ A custom bash script for automating the installation process and post installation build of an Arch Linux operating system with a run time of less than ten minutes. \\
+$\bullet$ Automated installation and development environment setup in Bash. \\
+%$\bullet$ Full feature install in 5--10 minutes. \\
 {\bf Sudoku Solver} \\
-$\bullet$ Java version of Donald Knuth's Dancing Links data structure for solving Sudoku puzzles. \\
-{\bf Intel Emulators} \\
-$\bullet$ 8080 and 8086 CPU emulators written in C.
+$\bullet$ Dancing Links implementation in Java for solving Sudoku puzzles using Algorithm X. \\
+{\bf Intel Emulator} \\
+$\bullet$ 8080 CPU emulator written in C.
 \end{sectionbody}
+
+% Space
+\vspace{2mm}
 
 % Awards & Activities
 \sectionheader{Awards \& Activities}
@@ -59,60 +75,39 @@ $\bullet$ 8080 and 8086 CPU emulators written in C.
 {\bf UIC Bioengineering Student Journal} --- Editorial Board Member \\
 $\bullet$ Chief Editor from Fall 2014 to Spring 2015. \\
 $\bullet$ Author of {\it Advances in DNA Computing and Molecular Programming}. \\
-{\bf NodeSchool Chicago} --- Mentor \\
-{\bf President's Award Program Scholar}
+{\bf President's Award Program Scholar} \\
+{\bf NodeSchool Chicago} --- Mentor
 \end{sectionbody}
+
+% Space
+\vspace{2mm}
 
 % Work Experience
 \sectionheader{Work Experience}
 \begin{sectionbody}
-{\bf UIC Dynamic Simulation Laboratory}, Chicago, Illinois \\
-\textit{Webmaster} \\
-$\bullet$ Wrote a website using HTML, CSS, Javascript, and PHP.\@ \\
-$\bullet$ Provided extensive documentation so the site could be maintained after its completion. \\
-{\bf UIC Department of Mathematics, Statistics, and Computer Science}, Chicago, Illinois \\
-\textit{Undergraduate Teacher's Assistant and Grader} \\
-$\bullet$ Teaching assistant for Professor Douglas Hogan. \\
-$\bullet$ Graded weekly homework assignments in a timely manner and proctored overflow exams.
+{\bf JP Morgan \& Chase}, Chicago, Illinois \hfill Sep 2017 -- Present \\
+    \textit{Account and Reference Data Analyst} -- Contractor \\
+$\bullet$ Set up and QA'd new customer lockboxes in a controlled testing environment. \\
+$\bullet$ Migrated lockboxes into production after receiving confirmation of successful test transmission.\\
+{\bf Hahn's Bakery}, Geneva, Illinois \hfill Jun 2011 -- Jan 2017 \\
+\textit{Sales Manager} \\
+{\bf University of Illinois at Chicago}, Chicago, Illinois \hfill Sep 2012 -- Dec 2015 \\
+\textit{Student Employee} \\
+{\bf Freelance Web Developer} \hfill Nov 2013 -- Feb 2015
 \end{sectionbody}
+
+% Space
+\vspace{2mm}
 
 % Skills
 \sectionheader{Skills}
 \begin{sectionbody}
 {\bf Languages} \\
-$\bullet$ C/C++, Java, Python, Ruby, Bash/Zsh, Javascript (Node.js, Express, React, Redux, Electron), mySQL, MongoDB, x86 (\_64) Assembly, JSON, \LaTeX, HTML5, CSS.\@ \\
+$\bullet$ C/C++, Java, Bash/Zsh, Javascript (Node.js, Express, React, Redux, Electron), Python, Ruby, PHP, mySQL, JSON, \LaTeX, HTML5, CSS (SASS). \\
 {\bf Operating Systems} \\
-$\bullet$ Windows (XP --- 10), Linux (Arch, Fedora, Kali, Ubuntu), OSX.\@ \\
+$\bullet$ Windows (XP --- 10), Linux (Arch, Fedora, Kali, Ubuntu), OSX. \\
 {\bf Tools} \\
 $\bullet$ Git/Github, Vim, Visual Studio, IntelliJ, Docker, Webpack, Babel, Virtual Box, Postman.
 \end{sectionbody}
 
 \end{document}
-
-%\noindent
-%\large, \Large, \LARGE
-%\\
-
-%\noindent {\Large \bf Objective}
-%\smallskip
-%\noindent
-%\bigskip
-%\noindent {\Large \bf Executive Summary}
-%\smallskip
-%\noindent
-
-%hfill 
-
-%\noindent
-%Can program in a large variety of languages including: \\
-%\centerline{\hfill $\bullet$ C++ \hfill $\bullet$ Python \hfill $\bullet$ Perl \hfill} \\
-%\centerline{ \hfill $\bullet$ Bash \hfill $\bullet$ IDL \hfill} \\
-%Proficient with the following engineering applications: \\
-%\centerline{ \hfill $\bullet$ MatLab \hfill $\bullet$ Solid Works \hfill $\bullet$ EES \hfill} \\
-%\noindent{\Large \bf Professional Experience}
-%\smallskip
-%\centerline{ {\Large \bf Laboratory for Atmospheric and Space Physics \hfill 2011 Present} }
-%$\bullet$ Mission Operations and Subsystem Analysis
-%$\bullet$ Analysis of the SORCE and AIM Power Subsystems
-%$\bullet$ Analysis of the TIM SORCE Instrument and QSCAT Scatterometer
-%\bigskip
